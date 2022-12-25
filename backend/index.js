@@ -13,18 +13,10 @@ const PORT = process.env.PORT || 4000
 // auth routes
 app.use("/auth",AuthRouter)
 
-app.get("/about",(req,res)=>{
- res.send("hello anbout")
+app.get("/",(req,res)=>{
+ res.send("hello welcome")
 })
-app.get("/contact",(req,res)=>{
- res.send("hello contact")
-})
-app.get("/signup",(req,res)=>{
- res.send("hello signup")
-})
-app.get("/signin",(req,res)=>{
- res.send("hello signin")
-})
+
 
 
 app.listen(PORT,async()=>{

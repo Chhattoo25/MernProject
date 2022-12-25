@@ -1,4 +1,6 @@
 const { Router } = require("express");
+const { register, login } = require("../Controllers/authController");
+
 
 const AuthRouter = Router();
 
@@ -6,11 +8,9 @@ AuthRouter.get("/", (req, res) => {
   res.send("hello world");
 });
 
-AuthRouter.post("/register", async(req, res) => {
-  console.log(req.body);
-  res.json({message:req.body})
-  // res.send("register form submitted successfully");
-});
+AuthRouter.post("/register",register)
+
+AuthRouter.post("/login", login)
 
 module.exports = {
   AuthRouter,
