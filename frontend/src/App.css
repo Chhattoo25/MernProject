@@ -1,10 +1,5 @@
-.navbar-nav {
-margin-left: auto;
-display: flex;
-gap:100px
-}
-
-NavLink{
- text-decoration: none;
- color: black;
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
