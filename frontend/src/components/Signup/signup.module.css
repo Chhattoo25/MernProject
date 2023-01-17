@@ -43,7 +43,16 @@
   margin: 20px;
   padding: 10px;
   margin: auto;
-  box-shadow: 3px 4px 3px wheat;
+  /* box-shadow: 3px 4px 3px wheat; */
+}
+figure{
+margin-bottom: 20px;
+}
+.formsubmit{
+ padding: 10px;
+ width: 90px;
+ margin-top: 10px;
+ margin-left: 20px;
 }
 
 @media screen and (max-width: 880px) {
