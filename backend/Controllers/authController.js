@@ -42,9 +42,9 @@ const login = async (req, res) => {
 
     if (user) {
       const isMatch = await bcrypt.compare(password, user.password);
-//       generate token 
+      //       generate token
       const token = await user.generateAuthToken();
-// save token in cookie
+      // save token in cookie
       res.cookie("jwttoken", token, {
         expires: new Date(Date.now() + 9000000),
         httpOnly: true,
