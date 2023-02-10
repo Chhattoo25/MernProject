@@ -1,0 +1,92 @@
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.innerCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contactForm{
+width: 70%;
+ margin: 50px auto;
+ background-color: #fff;
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.formContainer{
+ padding: 20px;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heading{
+ font-size: 20px;
+ font-weight: bold;
+ text-align: start;
+ margin-bottom: 20px;
+ color: purple;
+}
+
+.inpt{
+ display: flex;
+ gap: 30px;
+}
+.inpt > input{
+ height: 30px;
+ border-radius: 4px;
+ font-size: 20px;
+ padding: 5px;
+
+}
+
+.textar{
+ border-radius: 5px;
+ margin-top: 20px;
+ font-size: 16px;
+
+}
+.textar> textarea{
+ font-size: 18px;
+ border-radius: 5px;
+ padding: 10px;
+}
+
+.submitbtn{
+ height: 30px;
+ padding: 5px;
+ margin-top: 10px;
+ color: white;
+ background-color: rgb(124, 138, 225);
+}
+
+.submitbtn:hover{
+ color: black;
+ background-color: #fff;
+ border-radius: 5px;
+}
+@media screen and (max-width: 880px) {
+  .contactInfo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin: 50px auto;
+  }
+}

@@ -1,0 +1,40 @@
+.homePage {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.homeDiv {
+  /* background-color: #eaeaea; */
+  background: linear-gradient(to right, #b7c6f0 50%, #f2eaea 50%);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome {
+  color: rgb(103, 103, 205);
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* .homeDiv:first-child {
+  background-color: #d9d9d9;
+} */
+
+@media (max-width: 767px) {
+  .homePage {
+    flex-direction: column;
+  }
+}
